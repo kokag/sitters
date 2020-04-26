@@ -52,7 +52,7 @@
       <div :class="$style.textBox">
         <p :class="$style.license">Авторизуясь или регистрируясь, вы соглашаетесь с условиями обработки ваших персональных
                                данных и офертой</p>
-        <p><b>Уже есть аккаунт?</b></p>
+        <p :class="$style.accountQuestion"><b>Уже есть аккаунт?</b></p>
       </div>
       <div :class="$style.loginButtonBox">
         <button :class="$style.loginButton">Войти</button>
@@ -65,9 +65,12 @@
 <script>
 
 export default {
-
-  name: 'regModal'
-
+  name: 'regModal',
+  methods: {
+    close () {
+      this.$emit('close')
+    }
+  },
 }
 
 </script>
@@ -99,17 +102,34 @@ export default {
 .topBox {
   display: flex;
   justify-content: space-between;
-  margin: 31px 28px 0 50px
+  margin: 28px 28px 0 50px;
+  & label {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+  }
+}
+
+.closeButton {
+  border: none;
+  cursor: pointer;
+  color: green;
+  background-color: inherit;
+  display: inline-block;
 }
 
 .inputBox {
-  margin: 50px 48px 44px 48px;
-
+  margin: 50px 48px 27px 48px;
+& label {
+  font-family: 'Roboto', sans-serif;
+  font-size: 12px;
+}
 }
 
 .inputId {
   height: 46px;
   width: 603px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
   padding-left: 14px;
   margin-top: 5px;
   margin-bottom: 17px;
@@ -127,29 +147,41 @@ export default {
   color: white;
   width: 100%;
   padding: 14px 0 14px 0;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
   border-radius: 285px;
   background-color: #299f55;
 }
 
 .textBox {
-  margin: 0 110px 17px 110px;
+  margin: 45px 110px 17px 110px;
   text-align: center;
 }
 
 .license {
+  font-family: 'Roboto', sans-serif;
   font-size: 12px;
   text-align: center;
   color: #2c2c2c;
+  padding-bottom: 30px;
+  margin: 0;
 }
 
+.accountQuestion {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  margin: 0;
+}
 
 .loginButtonBox {
   display: flex;
   justify-content: center;
-  padding-bottom: 34px;
+  margin-bottom: 34px;
 }
 
 .loginButton {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
   padding: 13px 98px;
   border-radius: 285px;
   border: solid 1px rgba(35, 31, 32, 0.14);

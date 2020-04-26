@@ -35,8 +35,8 @@
       >Войти
       </button>
       <div :class="$style.textBox">
-      <h1 :class="$style.text">Авторизуясь или регистрируясь, вы соглашаетесь с условиями обработки ваших персональных
-                               данных и офертой</h1>
+      <p :class="$style.text">Авторизуясь или регистрируясь, вы соглашаетесь с условиями обработки ваших персональных
+                               данных и офертой</p>
       <h2 :class="$style.regText"> Ещё не зарегистрированы?</h2>
     </div>
       <div :class="$style.registrationButtonBox">
@@ -112,12 +112,15 @@ export default {
  & label {
    font-size: 12px;
    color: #2c2c2c;
+   font-family: 'Roboto', sans-serif;
  }
 }
 
 .inputLogin {
   height: 46px;
   width: 603px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
   padding-left: 14px;
   margin-top: 5px;
   margin-bottom: 17px;
@@ -129,6 +132,8 @@ export default {
 .passwordInput {
   height: 46px;
   width: 603px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
   padding-left: 14px;
   margin-top: 5px;
   border-radius: 6px;
@@ -138,6 +143,7 @@ export default {
 
 .loginButton {
   padding: 14px 20px;
+  font-family: 'Roboto', sans-serif;
   font-size: 16px;
   border: none;
   cursor: pointer;
@@ -159,12 +165,14 @@ export default {
 
 .text {
   font-size: 12px;
+  font-family: 'Roboto', sans-serif;
   color: #2c2c2c;
   text-align: center;
 }
 
 .regText {
   font-size: 16px;
+  font-family: 'Roboto', sans-serif;
   text-align: center;
   margin-top: 30px;
   color: #2c2c2c;
@@ -179,6 +187,8 @@ export default {
 .registrationButton {
   padding: 13px 53px;
   border-radius: 285px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
   border: solid 1px rgba(35, 31, 32, 0.14);
   background-color: #ffffff;
 }
