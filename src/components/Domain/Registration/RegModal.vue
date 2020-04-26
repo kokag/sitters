@@ -9,7 +9,7 @@
         <button
           :class="$style.closeButton"
           @click="close()"
-        >X
+        ><i class="fas fa-times"></i>
         </button>
       </div>
       <div :class="$style.inputBox">
@@ -102,7 +102,7 @@ export default {
 .topBox {
   display: flex;
   justify-content: space-between;
-  margin: 28px 28px 0 50px;
+  margin: 26px 28px 0 50px;
   & label {
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
@@ -110,15 +110,16 @@ export default {
 }
 
 .closeButton {
+  font-size: 25px;
   border: none;
   cursor: pointer;
   color: green;
   background-color: inherit;
-  display: inline-block;
 }
 
 .inputBox {
-  margin: 50px 48px 27px 48px;
+  margin: 43px 48px 27px 48px;
+  justify-content: space-between;
 & label {
   font-family: 'Roboto', sans-serif;
   font-size: 12px;
@@ -126,8 +127,10 @@ export default {
 }
 
 .inputId {
+  display: flex;
+  flex-wrap: wrap;
   height: 46px;
-  width: 603px;
+  width: 100%;
   font-family: 'Roboto', sans-serif;
   font-size: 14px;
   padding-left: 14px;
@@ -161,6 +164,7 @@ export default {
 .license {
   font-family: 'Roboto', sans-serif;
   font-size: 12px;
+  line-height: 1.5;
   text-align: center;
   color: #2c2c2c;
   padding-bottom: 30px;

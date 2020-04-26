@@ -8,7 +8,7 @@
         <button
           :class="$style.closeButton"
           @click="close()"
-        >X
+        ><i class="fas fa-times"></i>
         </button>
       </div>
       <div :class="$style.inputBox">
@@ -92,18 +92,18 @@ export default {
 
 
 .topConteiner {
-  margin: 37px 28px 36px 50px;
+  margin: 27px 28px 36px 50px;
   display: flex;
   justify-content: space-between;
 
 }
 
 .closeButton {
+  font-size: 25px;
   border: none;
   cursor: pointer;
   color: green;
   background-color: inherit;
-  display: inline-block;
 }
 
 .inputBox {
@@ -166,6 +166,7 @@ export default {
 .text {
   font-size: 12px;
   font-family: 'Roboto', sans-serif;
+  line-height: 1.5;
   color: #2c2c2c;
   text-align: center;
 }
