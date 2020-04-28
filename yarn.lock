@@ -7992,10 +7992,10 @@ vm-browserify@^1.0.1:
   resolved "https://registry.yarnpkg.com/vm-browserify/-/vm-browserify-1.1.2.tgz#78641c488b8e6ca91a75f511e7a3b32a86e5dda0"
   integrity sha512-2ham8XPWTONajOR0ohOKOHXkm3+gaBmGut3SRuu75xLd/RRaY6vqgh8NBYYk7+RW3u5AtzPQZG8F10LHkl0lAQ==
 
-vue-book@^0.0.19:
-  version "0.0.19"
-  resolved "https://registry.yarnpkg.com/vue-book/-/vue-book-0.0.19.tgz#22ece598d5d83ff2175996f399742e68e7b51b84"
-  integrity sha512-/QDritkeJQDjifUmhKgBzAK5cgu7v+/jLJ4TBzkUIWGtHXzaYSzYW4zd9/zhm+6e7eGFGY4U4Ch8b5sbAoLyCQ==
+vue-book@0.1.0-alpha.18:
+  version "0.1.0-alpha.18"
+  resolved "https://registry.yarnpkg.com/vue-book/-/vue-book-0.1.0-alpha.18.tgz#f37af72a66dcee4e32ff22587b19c2103e1478c5"
+  integrity sha512-Oy3hFpiqiSTXUoSozRwiekAi1gt05sn1LZ4R/H+hNiC++wSML9MAChgMnQytXGJHn7kUrUo4r8/9b+tNyk4rEQ==
 
 vue-eslint-parser@^7.0.0:
   version "7.0.0"
